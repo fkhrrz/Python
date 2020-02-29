@@ -1,4 +1,3 @@
-fiboList = []
 def fibonacci(e):
     if e <= 1:
         result = e
