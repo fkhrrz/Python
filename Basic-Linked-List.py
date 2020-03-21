@@ -10,7 +10,8 @@ class LinkedList:
   def add_first(self, data):
     current_node = self.head
     self.head = Node(data)
-    self.head.next = current_node
+    if current_node != None:
+        self.head.next = current_node
 
 
   def add_last(self, new_data):
