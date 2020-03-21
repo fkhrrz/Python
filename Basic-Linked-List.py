@@ -8,13 +8,9 @@ class LinkedList:
     self.head = None
 
   def add_first(self, data):
-    new_node = Node(data)
-    if self.head is None:
-      self.head = new_node
-    else:
-      current_node = self.head
-      self.head = new_node
-      self.head.next = current_node
+    current_node = self.head
+    self.head = Node(data)
+    self.head.next = current_node
 
 
   def add_last(self, new_data):
